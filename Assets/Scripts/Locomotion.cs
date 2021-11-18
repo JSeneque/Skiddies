@@ -10,7 +10,7 @@ public class Locomotion : MonoBehaviour
     [SerializeField] private float _maxSteeringAngle = 30.0f;
     // maximum braking torque
     [SerializeField] private float _maxBrakingTorque = 550.0f;
-    //[SerializeField] private GameObject _skidPrefab;
+    [SerializeField] private GameObject _skidPrefab;
     [SerializeField] private float _skidThreshold = 0.4f;
     [SerializeField] private AudioClip _skidSoundEffect;
 
@@ -80,12 +80,17 @@ public class Locomotion : MonoBehaviour
     private void BeginSkids(int i)
     {
         // check if the wheel is not already skidding
-        if (_skidTrails[i].parent == null)
+        if (_skidTrails[i] == null)
         {
-            //_skidTrails[i] = Instantiate(_skidPrefab).transform;
-            // put it at the base of the tyre
-            _skidTrails[i].localPosition = Vector3.down * _wheelColliders[i].radius;
+            _skidTrails[i] = Instantiate(_skidPrefab).transform;
         }
+
+        // make the skid mark a child of the wheel collider
+        _skidTrails[i].parent = _wheelColliders[i].transform;
+        // put it at the base of the tyre
+        _skidTrails[i].localPosition = Vector3.down * _wheelColliders[i].radius;
+        // orientate it upwards
+        _skidTrails[i].localRotation = Quaternion.Euler(90, 0, 0);
     }
 
     private void EndSkids(int i)
@@ -97,7 +102,8 @@ public class Locomotion : MonoBehaviour
         Transform temp = _skidTrails[i];
         _skidTrails[i] = null;
         temp.parent = null;
-        Destroy(temp, 20);
+        temp.rotation = Quaternion.Euler(90, 0, 0);
+       Destroy(temp.gameObject, 20);
     }
 
     private void SkidCheck()
@@ -119,7 +125,12 @@ public class Locomotion : MonoBehaviour
                 {
                     // play the skidding sound effect
                     _audioSource.PlayOneShot(_skidSoundEffect);
+                    //BeginSkids(i);
                 }
+            }
+            else
+            {
+                //EndSkids(i);
             }
         }
 
