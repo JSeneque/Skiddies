@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Locomotion : MonoBehaviour
 {
@@ -18,6 +19,8 @@ public class Locomotion : MonoBehaviour
     private Transform[] _skidTrails = new Transform[4];
     private ParticleSystem[] _wheelSmokes = new ParticleSystem[4];
     private AudioSource _audioSource;
+    private float acceleration;
+    private float steering;
 
     private void Awake()
     {
@@ -36,19 +39,27 @@ public class Locomotion : MonoBehaviour
         }
     }
 
+    public void OnMove(InputValue input)
+    {
+        Vector2 inputVec = input.Get<Vector2>();
+
+        acceleration = inputVec.y;
+        Debug.Log("Vertical: " + inputVec.y + " Horzontial: " + inputVec.x);
+        steering = inputVec.x;
+    }
 
     // Update is called once per frame
     void Update()
     {
         // get simple up /down inputs
-        float acceleration = Input.GetAxis("Vertical");
-        Debug.Log(acceleration);
+        //float acceleration = Input.GetAxis("Vertical");
+        //Debug.Log(acceleration);
         // steering inputs
-        float steering = Input.GetAxis("Horizontal");
+        //float steering = Input.GetAxis("Horizontal");
         // brake input
-        float braking = Input.GetAxis("Brakes");
+        //float braking = Input.GetAxis("Brakes");
 
-        Move(acceleration, steering, braking);
+        Move(acceleration, steering, 0);
         SkidCheck();
     }
 
