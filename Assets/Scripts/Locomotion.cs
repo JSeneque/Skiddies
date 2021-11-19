@@ -42,6 +42,7 @@ public class Locomotion : MonoBehaviour
     {
         // get simple up /down inputs
         float acceleration = Input.GetAxis("Vertical");
+        Debug.Log(acceleration);
         // steering inputs
         float steering = Input.GetAxis("Horizontal");
         // brake input
