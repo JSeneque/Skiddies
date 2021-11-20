@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 215990324909827800}
   - component: {fileID: 278710972235923794}
+  - component: {fileID: 1903563965}
   m_Layer: 0
   m_Name: Wheel Collider - Front Right
   m_TagString: Untagged
@@ -62,6 +63,20 @@ WheelCollider:
     m_AsymptoteValue: 0.75
     m_Stiffness: 1
   m_Enabled: 1
+--- !u!114 &1903563965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2328016952721097641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 702f0e2956df74777866075e079999ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 3954359953496107221}
+  skidmarksController: {fileID: 0}
 --- !u!1 &3955013448701855345
 GameObject:
   m_ObjectHideFlags: 0
@@ -158,6 +173,7 @@ GameObject:
   - component: {fileID: 3954359953496107221}
   - component: {fileID: 3954359953496107220}
   - component: {fileID: 1098665262625333}
+  - component: {fileID: 1398201027}
   m_Layer: 0
   m_Name: Car
   m_TagString: Untagged
@@ -285,6 +301,8 @@ MonoBehaviour:
   _torque: 250
   _maxSteeringAngle: 30
   _maxBrakingTorque: 8000
+  _skidPrefab: {fileID: 3859478790004471098, guid: 81a9fa819c6aa8f42984fe694731c00e, type: 3}
+  _wheelSmokePrefab: {fileID: 3153328384429180338, guid: b41e4c4548150bf4abd6329dcd8510c4, type: 3}
   _skidThreshold: 0.5
   _skidSoundEffect: {fileID: 8300000, guid: bd9566abdbf08834281bfb4ea8b92a5d, type: 3}
 --- !u!82 &1098665262625333
@@ -383,6 +401,56 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1398201027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3955095434656427231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: fc0275bacf1a5fe45845099607fcb735, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: e11be58f-40d9-4f14-bd4b-93c573c58851
+    m_ActionName: Player/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3954359953496107220}
+        m_TargetAssemblyTypeName: Locomotion, Assembly-CSharp
+        m_MethodName: Braking
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: bb28b598-84a8-45ef-ad58-c08f45134a2a
+    m_ActionName: Player/Braking[/Keyboard/space]
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &3955327643796207893
 GameObject:
   m_ObjectHideFlags: 0
@@ -879,6 +947,7 @@ GameObject:
   m_Component:
   - component: {fileID: 742221020426980607}
   - component: {fileID: 1176968103573231560}
+  - component: {fileID: 520971583}
   m_Layer: 0
   m_Name: Wheel Collider - Rear Right
   m_TagString: Untagged
@@ -931,6 +1000,20 @@ WheelCollider:
     m_AsymptoteValue: 0.75
     m_Stiffness: 1
   m_Enabled: 1
+--- !u!114 &520971583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4648264378229173853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 702f0e2956df74777866075e079999ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 3954359953496107221}
+  skidmarksController: {fileID: 0}
 --- !u!1 &8176695798522549041
 GameObject:
   m_ObjectHideFlags: 0
@@ -941,6 +1024,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8887255281324079824}
   - component: {fileID: 8516859300663577393}
+  - component: {fileID: 135854739}
   m_Layer: 0
   m_Name: Wheel Collider - Rear Left
   m_TagString: Untagged
@@ -993,6 +1077,20 @@ WheelCollider:
     m_AsymptoteValue: 0.75
     m_Stiffness: 1
   m_Enabled: 1
+--- !u!114 &135854739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8176695798522549041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 702f0e2956df74777866075e079999ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 3954359953496107221}
+  skidmarksController: {fileID: 0}
 --- !u!1 &8968662653570685136
 GameObject:
   m_ObjectHideFlags: 0
@@ -1003,6 +1101,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7366552117086109416}
   - component: {fileID: 1767272023241595959}
+  - component: {fileID: 1062929346}
   m_Layer: 0
   m_Name: Wheel Collider - Front Left
   m_TagString: Untagged
@@ -1055,3 +1154,17 @@ WheelCollider:
     m_AsymptoteValue: 0.75
     m_Stiffness: 1
   m_Enabled: 1
+--- !u!114 &1062929346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8968662653570685136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 702f0e2956df74777866075e079999ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 3954359953496107221}
+  skidmarksController: {fileID: 0}

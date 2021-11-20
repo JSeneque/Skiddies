@@ -123,11 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!54 &99219006 stripped
-Rigidbody:
-  m_CorrespondingSourceObject: {fileID: 3954359953496107221, guid: 1e8d065f30b4fa6448986fd69c9f298a, type: 3}
-  m_PrefabInstance: {fileID: 3954359953455816427}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &121035866
 GameObject:
   m_ObjectHideFlags: 0
@@ -222,32 +217,13 @@ RectTransform:
   - {fileID: 412109577}
   - {fileID: 1524820729}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &135854736 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8176695798522549041, guid: 1e8d065f30b4fa6448986fd69c9f298a, type: 3}
-  m_PrefabInstance: {fileID: 3954359953455816427}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &135854739
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 135854736}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 702f0e2956df74777866075e079999ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 99219006}
-  skidmarksController: {fileID: 799242530}
 --- !u!1 &225799835
 GameObject:
   m_ObjectHideFlags: 0
@@ -383,25 +359,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 412109576}
   m_CullTransparentMesh: 1
---- !u!1 &520971580 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4648264378229173853, guid: 1e8d065f30b4fa6448986fd69c9f298a, type: 3}
-  m_PrefabInstance: {fileID: 3954359953455816427}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &520971583
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 520971580}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 702f0e2956df74777866075e079999ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 99219006}
-  skidmarksController: {fileID: 799242530}
 --- !u!1 &532446766
 GameObject:
   m_ObjectHideFlags: 0
@@ -547,25 +504,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1062929343 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8968662653570685136, guid: 1e8d065f30b4fa6448986fd69c9f298a, type: 3}
-  m_PrefabInstance: {fileID: 3954359953455816427}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1062929346
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1062929343}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 702f0e2956df74777866075e079999ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 99219006}
-  skidmarksController: {fileID: 799242530}
 --- !u!1001 &1096086759
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -640,72 +578,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4251109630112746, guid: 139b3e971e6648b459617b164e32d96d, type: 3}
   m_PrefabInstance: {fileID: 1096086759}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1398201026 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3955095434656427231, guid: 1e8d065f30b4fa6448986fd69c9f298a, type: 3}
-  m_PrefabInstance: {fileID: 3954359953455816427}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1398201027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1398201026}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: fc0275bacf1a5fe45845099607fcb735, type: 3}
-  m_NotificationBehavior: 2
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents:
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: e11be58f-40d9-4f14-bd4b-93c573c58851
-    m_ActionName: Player/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1398201029}
-        m_TargetAssemblyTypeName: Locomotion, Assembly-CSharp
-        m_MethodName: Braking
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: bb28b598-84a8-45ef-ad58-c08f45134a2a
-    m_ActionName: Player/Braking[/Keyboard/space]
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: Player
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
---- !u!114 &1398201029 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3954359953496107220, guid: 1e8d065f30b4fa6448986fd69c9f298a, type: 3}
-  m_PrefabInstance: {fileID: 3954359953455816427}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1398201026}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6109af97c14dc04684bda21e8eb1119, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1398201033 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3958858885134377209, guid: 1e8d065f30b4fa6448986fd69c9f298a, type: 3}
@@ -974,7 +846,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1895212883
 GameObject:
@@ -1080,6 +952,7 @@ GameObject:
   - component: {fileID: 1899791832}
   - component: {fileID: 1899791831}
   - component: {fileID: 1899791830}
+  - component: {fileID: 1899791833}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1149,28 +1022,27 @@ Transform:
   m_LocalPosition: {x: -0.05227247, y: 3.2597816, z: -5.5009584}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1398201033}
-  m_RootOrder: 7
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1903563962 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2328016952721097641, guid: 1e8d065f30b4fa6448986fd69c9f298a, type: 3}
-  m_PrefabInstance: {fileID: 3954359953455816427}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1903563965
+--- !u!114 &1899791833
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1903563962}
+  m_GameObject: {fileID: 1899791829}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 702f0e2956df74777866075e079999ec, type: 3}
+  m_Script: {fileID: 11500000, guid: d8040337f1a155049ae2be0a684d58df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 99219006}
-  skidmarksController: {fileID: 799242530}
+  target: {fileID: 1398201033}
+  distance: 8
+  height: -9
+  heightOffset: 1
+  heightDamping: 4
+  rotationDamping: 2
 --- !u!1001 &3954359953455816427
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1178,29 +1050,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3954359953496107220, guid: 1e8d065f30b4fa6448986fd69c9f298a, type: 3}
-      propertyPath: _torque
-      value: 250
-      objectReference: {fileID: 0}
-    - target: {fileID: 3954359953496107220, guid: 1e8d065f30b4fa6448986fd69c9f298a, type: 3}
-      propertyPath: _skidPrefab
+    - target: {fileID: 135854739, guid: 1e8d065f30b4fa6448986fd69c9f298a, type: 3}
+      propertyPath: skidmarksController
       value: 
-      objectReference: {fileID: 3859478790004471098, guid: 81a9fa819c6aa8f42984fe694731c00e, type: 3}
-    - target: {fileID: 3954359953496107220, guid: 1e8d065f30b4fa6448986fd69c9f298a, type: 3}
-      propertyPath: _skidThreshold
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3954359953496107220, guid: 1e8d065f30b4fa6448986fd69c9f298a, type: 3}
-      propertyPath: _wheelSmokePrefab
+      objectReference: {fileID: 799242530}
+    - target: {fileID: 520971583, guid: 1e8d065f30b4fa6448986fd69c9f298a, type: 3}
+      propertyPath: skidmarksController
       value: 
-      objectReference: {fileID: 3153328384429180338, guid: b41e4c4548150bf4abd6329dcd8510c4, type: 3}
+      objectReference: {fileID: 799242530}
+    - target: {fileID: 1062929346, guid: 1e8d065f30b4fa6448986fd69c9f298a, type: 3}
+      propertyPath: skidmarksController
+      value: 
+      objectReference: {fileID: 799242530}
+    - target: {fileID: 1903563965, guid: 1e8d065f30b4fa6448986fd69c9f298a, type: 3}
+      propertyPath: skidmarksController
+      value: 
+      objectReference: {fileID: 799242530}
     - target: {fileID: 3955095434656427231, guid: 1e8d065f30b4fa6448986fd69c9f298a, type: 3}
       propertyPath: m_Name
       value: Car
       objectReference: {fileID: 0}
     - target: {fileID: 3958858885134377209, guid: 1e8d065f30b4fa6448986fd69c9f298a, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3958858885134377209, guid: 1e8d065f30b4fa6448986fd69c9f298a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1220,15 +1092,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3958858885134377209, guid: 1e8d065f30b4fa6448986fd69c9f298a, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3958858885134377209, guid: 1e8d065f30b4fa6448986fd69c9f298a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3958858885134377209, guid: 1e8d065f30b4fa6448986fd69c9f298a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3958858885134377209, guid: 1e8d065f30b4fa6448986fd69c9f298a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
