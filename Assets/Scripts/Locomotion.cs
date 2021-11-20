@@ -19,8 +19,11 @@ public class Locomotion : MonoBehaviour
     private Transform[] _skidTrails = new Transform[4];
     private ParticleSystem[] _wheelSmokes = new ParticleSystem[4];
     private AudioSource _audioSource;
-    private float acceleration;
-    private float steering;
+   // private float acceleration;
+   //private float steering;
+    private float braking;
+
+    private PlayerInput playerInput;
 
     private void Awake()
     {
@@ -37,29 +40,30 @@ public class Locomotion : MonoBehaviour
             _wheelSmokes[i] = Instantiate(_wheelSmokePrefab);
             _wheelSmokes[i].Stop();
         }
+
+        playerInput = GetComponent<PlayerInput>();
+        if (playerInput == null)
+        {
+            Debug.LogError("Player input component is missing");
+        }
     }
 
-    public void OnMove(InputValue input)
+    public void Braking(InputAction.CallbackContext context)
     {
-        Vector2 inputVec = input.Get<Vector2>();
-
-        acceleration = inputVec.y;
-        Debug.Log("Vertical: " + inputVec.y + " Horzontial: " + inputVec.x);
-        steering = inputVec.x;
+        if (context.started) braking = 1.0f;
+        else if (context.canceled) braking = 0.0f;
     }
+
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        // get simple up /down inputs
-        //float acceleration = Input.GetAxis("Vertical");
-        //Debug.Log(acceleration);
-        // steering inputs
-        //float steering = Input.GetAxis("Horizontal");
-        // brake input
-        //float braking = Input.GetAxis("Brakes");
+        Vector2 moveInput = playerInput.actions["Move"].ReadValue<Vector2>();
+        
+        float acceleration = moveInput.y;
+        float steering = moveInput.x;
 
-        Move(acceleration, steering, 0);
+        Move(acceleration, steering, braking);
         SkidCheck();
     }
 
