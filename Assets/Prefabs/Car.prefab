@@ -298,7 +298,7 @@ MonoBehaviour:
   - {fileID: 278710972235923794}
   - {fileID: 1176968103573231560}
   - {fileID: 8516859300663577393}
-  _torque: 250
+  _torque: 500
   _maxSteeringAngle: 30
   _maxBrakingTorque: 8000
   _skidPrefab: {fileID: 3859478790004471098, guid: 81a9fa819c6aa8f42984fe694731c00e, type: 3}

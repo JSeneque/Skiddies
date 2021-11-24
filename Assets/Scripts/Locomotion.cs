@@ -52,11 +52,12 @@ public class Locomotion : MonoBehaviour
     {
         if (context.started) braking = 1.0f;
         else if (context.canceled) braking = 0.0f;
+        Debug.Log(context);
     }
 
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         Vector2 moveInput = playerInput.actions["Move"].ReadValue<Vector2>();
         
