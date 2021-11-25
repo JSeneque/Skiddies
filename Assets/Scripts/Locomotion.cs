@@ -1,6 +1,15 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+
+enum DriveType
+{
+    FrontWheel,
+    RearWheel,
+    FourWheel,
+    TwoWheel
+};
+
 public class Locomotion : MonoBehaviour
 {
     // the collection of wheels
@@ -15,6 +24,7 @@ public class Locomotion : MonoBehaviour
     [SerializeField] private ParticleSystem _wheelSmokePrefab;
     [SerializeField] private float _skidThreshold = 0.4f;
     [SerializeField] private AudioClip _skidSoundEffect;
+    [SerializeField] DriveType _driveType;
 
     private Transform[] _skidTrails = new Transform[4];
     private ParticleSystem[] _wheelSmokes = new ParticleSystem[4];
