@@ -173,7 +173,6 @@ GameObject:
   - component: {fileID: 3954359953496107221}
   - component: {fileID: 3954359953496107220}
   - component: {fileID: 1098665262625333}
-  - component: {fileID: 1398201027}
   m_Layer: 0
   m_Name: Car
   m_TagString: Untagged
@@ -305,6 +304,7 @@ MonoBehaviour:
   _wheelSmokePrefab: {fileID: 3153328384429180338, guid: b41e4c4548150bf4abd6329dcd8510c4, type: 3}
   _skidThreshold: 0.5
   _skidSoundEffect: {fileID: 8300000, guid: bd9566abdbf08834281bfb4ea8b92a5d, type: 3}
+  _driveType: 0
 --- !u!82 &1098665262625333
 AudioSource:
   m_ObjectHideFlags: 0
@@ -401,56 +401,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1398201027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3955095434656427231}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: fc0275bacf1a5fe45845099607fcb735, type: 3}
-  m_NotificationBehavior: 2
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents:
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: e11be58f-40d9-4f14-bd4b-93c573c58851
-    m_ActionName: Player/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3954359953496107220}
-        m_TargetAssemblyTypeName: Locomotion, Assembly-CSharp
-        m_MethodName: Braking
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: bb28b598-84a8-45ef-ad58-c08f45134a2a
-    m_ActionName: Player/Braking[/Keyboard/space]
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: Player
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
 --- !u!1 &3955327643796207893
 GameObject:
   m_ObjectHideFlags: 0

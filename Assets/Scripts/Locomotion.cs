@@ -96,6 +96,17 @@ public class Locomotion : MonoBehaviour
             _wheelColliders[i].motorTorque = thrustTorque;
 
             // apply steering to the front wheels and braking to the rear
+            switch (_driveType)
+            {
+                case DriveType.FrontWheel:
+
+                    break;
+            }
+                
+
+
+
+
             if (i < 2)
             {
                 _wheelColliders[i].steerAngle = steering;
