@@ -110,6 +110,7 @@ public class Locomotion : MonoBehaviour
             if (i < 2)
             {
                 _wheelColliders[i].steerAngle = steering;
+                _wheelColliders[i].brakeTorque = braking;
             }
             else
             {
