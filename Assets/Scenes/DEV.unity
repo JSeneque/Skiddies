@@ -818,14 +818,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1899791829}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d8040337f1a155049ae2be0a684d58df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1398201033}
-  distance: 8
-  height: -9
+  distance: 10
+  height: -10
   heightOffset: 1
   heightDamping: 4
   rotationDamping: 2
