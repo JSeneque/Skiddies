@@ -139,7 +139,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &97924450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -692,6 +692,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2328016952721097641, guid: 1e8d065f30b4fa6448986fd69c9f298a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3954359953496107220, guid: 1e8d065f30b4fa6448986fd69c9f298a, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -746,6 +750,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3958858885134377209, guid: 1e8d065f30b4fa6448986fd69c9f298a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4648264378229173853, guid: 1e8d065f30b4fa6448986fd69c9f298a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8176695798522549041, guid: 1e8d065f30b4fa6448986fd69c9f298a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8968662653570685136, guid: 1e8d065f30b4fa6448986fd69c9f298a, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
