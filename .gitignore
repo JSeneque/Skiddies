@@ -66,6 +66,6 @@ Assets/ThirdPartyAssets/Standard Assets
 #Assets/ThirdPartyAssets/PolygonStreetRacer/Materials
 Assets/ThirdPartyAssets/PolygonStreetRacer/Models
 Assets/ThirdPartyAssets/PolygonStreetRacer/Prefabs
-Assets/ThirdPartyAssets/PolygonStreetRacer/Scenes
-Assets/ThirdPartyAssets/PolygonStreetRacer/Textures
+#Assets/ThirdPartyAssets/PolygonStreetRacer/Scenes
+#Assets/ThirdPartyAssets/PolygonStreetRacer/Textures
 
